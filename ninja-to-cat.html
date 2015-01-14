@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ninja to Cat</title>
+	<link rel="stylesheet" type="text/css" href="ninja-to-cat.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('img').click(function() {
+				var temp = $(this).attr('src');
+				$(this).attr('src', $(this).attr('data-alt-src'));
+				$(this).attr('data-alt-src', temp);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<img class="puzzle" src='cat0.png' data-alt-src='left_content_ad.png' /> 
+		<img class="puzzle" src='cat1.png' data-alt-src='content_ad.png'/ >
+		<img class="puzzle" src='ninja2.png' data-alt-src='logo.png'/ > 
+		<img class="puzzle" src='ninja3.png' data-alt-src='phone.png'/ > 
+		<img class="puzzle" src='ninja4.png' data-alt-src='home_button.png' /> 
+
+	</div>
+</body>
+</html>
+
+			<!-- only one way -->
+			<!-- $('img').click(function() {
+				$(this).attr('src', $(this).attr('data-alt-src'));
+			}); -->
+
+
+<!-- 			need 5 ninja/cat pics here + replacement pics from wordstream -->
